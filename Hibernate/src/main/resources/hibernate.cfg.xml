@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/hibernate</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		<mapping resource="Inheritance/PaymentPOJO.hbm.xml"></mapping>
+
+		<!-- <property name="hibernate.cache.use_second_level_cache">true</property><property 
+			name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property><mapping 
+			resource="Cache/CachePOJO.hbm.xml"></mapping> -->
+
+		<!-- <mapping resource="in/co/rays/crud/User.hbm.xml"></mapping>
+		<mapping resource="in/co/rays/crud/CriteriaPOJO.hbm.xml"></mapping>
+		<mapping resource="in/co/rays/cache/CachePOJO.hbm.xml"></mapping>
+		<mapping resource="in/co/rays/associationOneToOne/Address.hbm.xml"></mapping>
+		<mapping resource="in/co/rays/associationOneToOne/Employee.hbm.xml"></mapping>
+		<mapping resource="in/co/rays/namQuery/UserPOJO.hbm.xml"></mapping>
+				<mapping resource="Inheritance/Payment.hbm.xml"></mapping>
+				 -->
+				
+			<!-- <mapping resource="in/co/rays/association/ActionItem.hbm.xml"></mapping> -->
+	<!-- 		<mapping resource="in/co/rays/association/Bid.hbm.xml"></mapping> -->
+	
+
+	<!-- <mapping resource="Association/ActionItem.hbm.xml"></mapping> <mappingresource="Association/Bid.hbm.xml"></mapping> 
+		<mapping resource="Criteria/CriteriaPojo.hbm.xml"/> <mapping resource="Association_One_to_One/Address.hbm.xml"></mapping><mapping 
+		resource="Association_One_to_One/Employee.hbm.xml"></mapping> -->
+	</session-factory>
+</hibernate-configuration>
